@@ -12,4 +12,12 @@
         - mapas\n
         - etc., etc.
     </string>
+    <string name="tab_esquerda">Esquerda</string>
+    <string name="tab_centro">Centro</string>
+    <string name="tab_direita">Direita</string>
+
+
+
+
+
 </resources>
