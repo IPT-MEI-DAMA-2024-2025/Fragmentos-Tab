@@ -44,5 +44,13 @@ class MainActivity : AppCompatActivity() {
             override fun onTabReselected(tab:TabLayout.Tab?){}
         })
 
+        // quando se faz um movimento de 'deslizar os dedos' sobre a zona do ViewPager2
+        // transmitir informação dessa ação ao tabulador
+        viewPager2.registerOnPageChangeCallback(object:ViewPager2.OnPageChangeCallback(){
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                tabLayout.getTabAt(position)?.select()
+            }
+        })
     }
 }
